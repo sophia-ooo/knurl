@@ -67,4 +67,4 @@ knurl uses CSS custom properties for easy theming. Override any of these variabl
 }
 ```
 
-See the [theming example](examples/theming/) for more ideas.
+See the [theming example code](https://github.com/sophia-ooo/knurl/tree/main/examples/theming) or [try it live](https://sophia-ooo.github.io/knurl/examples/theming/).

@@ -1,0 +1,46 @@
+{
+  "name": "knurl",
+  "version": "0.1.0",
+  "author": {
+    "name": "sophia",
+    "email": "hi@sophia.ooo",
+    "url": "https://github.com/sophia-ooo"
+  },
+  "description": "A declarative, event-driven graphical interface for monitoring and modifying JavaScript variables.",
+  "keywords": ["gui", "controls", "panel", "ui", "parameters", "debug"],
+  "license": "MIT",
+  "main": "dist/knurl.js",
+  "module": "dist/knurl.js",
+  "type": "module",
+  "workspaces": ["examples"],
+  "files": ["dist"],
+  "exports": {
+    ".": "./dist/knurl.js",
+    "./external": "./dist/knurl.external.js"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "build:examples": "npm run build --workspace=examples",
+    "build:all": "npm run build && npm run build:examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophia-ooo/knurl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sophia-ooo/knurl/issues"
+  },
+  "homepage": "https://github.com/sophia-ooo/knurl#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "preact": "^10.26.8"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "preact": {
+      "optional": true
+    }
+  }
+}

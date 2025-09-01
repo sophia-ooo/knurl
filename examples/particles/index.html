@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>knurl example</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        touch-action: none;
+      }
+
+      #canvas-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: white;
+      }
+
+      canvas {
+        display: block;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      #prompt {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #808080;
+        pointer-events: none;
+        font-family: system-ui, sans-serif;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas-container">
+      <div id="prompt">tap or drag to spawn</div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

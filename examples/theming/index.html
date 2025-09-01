@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>knurl example</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        margin: 80px 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 8px;
+      }
+
+      .knurl.knurl-light {
+        /* colors */
+        --panel-bg: hsl(60 20% 97%);
+        --panel-fg: hsl(230 15% 20%);
+        --panel-border: hsl(60 8% 88%);
+        --panel-hover: hsl(60 9% 83%);
+        --panel-pressed: hsl(60 8% 78%);
+        --panel-low-emphasis: hsl(230 10% 45%);
+        --panel-focus: var(--panel-fg);
+        --panel-selection-fg: hsl(60 20% 97%);
+        --panel-selection-bg: hsl(230 15% 20%);
+
+        /* semantic colors */
+        --value-number: hsl(265 100% 55%);
+        --value-string: hsl(140 55% 38%);
+
+        /* links */
+        --color-link: var(--value-number);
+
+        caret-color: var(--value-number);
+      }
+
+      .knurl.knurl-light input::selection {
+        background: var(--value-number);
+        color: #fff;
+      }
+
+      .knurl.knurl-high-contrast {
+        /* colors */
+        --panel-bg: #000;
+        --panel-fg: #fff;
+        --panel-border: #666;
+        --panel-hover: #333;
+        --panel-pressed: #1a1a1a;
+        --panel-low-emphasis: #d0d0d0;
+        --panel-focus: #fff;
+        --panel-selection-fg: #000;
+        --panel-selection-bg: #fff;
+
+        /* semantic colors */
+        --value-number: #ffea00;
+        --value-string: #00f7ff;
+
+        /* links */
+        --color-link: var(--value-number);
+
+        caret-color: var(--value-number);
+      }
+
+      .knurl.knurl-high-contrast input::selection {
+        background: var(--value-number);
+        color: #000;
+      }
+
+      .knurl.knurl-solarized-dark {
+        /* colors */
+        --panel-bg: #002b36;
+        --panel-fg: #839496;
+        --panel-border: #073642;
+        --panel-hover: #586e75;
+        --panel-pressed: #001f27;
+        --panel-low-emphasis: #657b83;
+        --panel-focus: #93a1a1;
+        --panel-selection-fg: #fdf6e3;
+        --panel-selection-bg: #268bd2;
+
+        /* semantic colors */
+        --value-number: #268bd2;
+        --value-string: #859900;
+
+        /* links */
+        --color-link: var(--value-number);
+
+        caret-color: var(--value-number);
+      }
+
+      .knurl.knurl-solarized-dark input::selection {
+        background: var(--value-number);
+        color: #fdf6e3;
+      }
+
+      .knurl.pocket-console {
+        /* colors */
+        --panel-bg: hsl(220 8% 95%);
+        --panel-fg: hsl(220 15% 15%);
+        --panel-border: hsl(220 8% 86%);
+        --panel-hover: hsl(220 8% 80%);
+        --panel-pressed: hsl(220 8% 73%);
+        --panel-low-emphasis: hsl(220 8% 46%);
+        --panel-focus: hsl(220 15% 15%);
+        --panel-selection-fg: hsl(220 8% 95%);
+        --panel-selection-bg: #0087d8;
+
+        /* semantic colors */
+        --value-string: #ff5b00;
+        --value-number: #0087d8;
+
+        /* links */
+        --color-link: var(--value-number);
+
+        caret-color: var(--value-number);
+      }
+
+      .knurl.pocket-console input::selection {
+        background: var(--value-number);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+import "./button.js";
+import "./buttons.js";
+import "./color.js";
+import "./display.js";
+import "./graph.js";
+import "./group.js";
+import "./number.js";
+import "./pad2.js";
+import "./range.js";
+import "./select.js";
+import "./text.js";
+import "./toggle.js";

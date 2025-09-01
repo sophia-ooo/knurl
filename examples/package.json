@@ -1,0 +1,14 @@
+{
+  "name": "knurl-examples",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ./scripts/build-examples-bundled.js; node ./scripts/build-examples-external.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5",
+    "p5": "^2.0.3",
+    "preact": "^10.26.8"
+  }
+}

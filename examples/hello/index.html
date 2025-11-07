@@ -2,39 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>knurl example</title>
+    <title>knurl</title>
     <style>
       html,
       body {
         margin: 0;
         height: 100%;
+        overflow: hidden;
       }
 
       #canvas-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100%;
-      }
-
-      #events {
-        margin: 8px;
-        font-family: monospace;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        display: none;
-      }
-
-      #events.show {
-        display: block;
       }
     </style>
   </head>
   <body>
     <div id="canvas-container"></div>
-    <div id="events"></div>
     <script src="bundle.js"></script>
   </body>
 </html>

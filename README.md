@@ -87,12 +87,6 @@ npm run build      # Build the library
 npm run build:all  # Build library and examples
 ```
 
-## Status
-
-- **Early release** - The core API is usable today but may evolve.
-- **Modern browser focus** - Relies on recent CSS/JS features (e.g. `interpolate-size` for height resize). It works on mobile, but tap targets and layout are tuned for desktop.
-- **No TypeScript** - PRs welcome.
-
 ## License
 
 MIT

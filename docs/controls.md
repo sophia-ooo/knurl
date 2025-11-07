@@ -89,13 +89,12 @@ Example showing all three levels:
 // Multiline textarea
 {
   id: "description", type: "text",
-  multiline: true, rows: 4, value: "Line 1\nLine 2"
+  rows: 4, value: "Line 1\nLine 2"
 }
 ```
 
 - **value** – string
-- multiline – boolean (use textarea instead of input, defaults to `false`)
-- rows – number (visible rows for multiline, defaults to `4`)
+- **rows** – number (defaults to `1` for single-line input; set to > 1 for textarea)
 
 ### `color` – Color picker with hex input
 

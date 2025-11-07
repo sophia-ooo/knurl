@@ -24,7 +24,7 @@ const EmojiPalette = ({ nodes, treeNode, update }) => {
       <button
         type="button"
         onClick={() => update({ [node.id]: { value: codepoint } })}
-        className={isSelected ? "selected" : ""}
+        className={isSelected ? "knurl-selected" : ""}
         key={emoji}
       >
         {emoji}
@@ -79,16 +79,13 @@ const animate = (bubbles = []) => {
   const { emoji } = panel.get();
   const emojiString = String.fromCodePoint(emoji);
 
-  // Create new bubbles
-  const newBubbles = [];
-  for (let i = 0; i < 5; i++) {
-    newBubbles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height - canvas.height,
-      velocity: Math.random() * 5.0 + 5.0,
-      emoji: emojiString,
-    });
-  }
+  // Create new bubble
+  const newBubble = {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height - canvas.height,
+    velocity: Math.random() * 5.0 + 5.0,
+    emoji: emojiString,
+  };
 
   // Set up text rendering
   ctx.font = "48px serif";
@@ -96,7 +93,7 @@ const animate = (bubbles = []) => {
   ctx.textBaseline = "middle";
 
   // Update and filter bubbles
-  const survivingBubbles = [...bubbles, ...newBubbles]
+  const survivingBubbles = [...bubbles, newBubble]
     .map((bubble) => ({
       ...bubble,
       y: bubble.y + bubble.velocity,

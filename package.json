@@ -1,19 +1,30 @@
 {
   "name": "knurl",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "sophia",
     "email": "hi@sophia.ooo",
     "url": "https://github.com/sophia-ooo"
   },
   "description": "A declarative, event-driven graphical interface for monitoring and modifying JavaScript variables.",
-  "keywords": ["gui", "controls", "panel", "ui", "parameters", "debug"],
+  "keywords": [
+    "gui",
+    "controls",
+    "panel",
+    "ui",
+    "parameters",
+    "debug"
+  ],
   "license": "MIT",
   "main": "dist/knurl.js",
   "module": "dist/knurl.js",
   "type": "module",
-  "workspaces": ["examples"],
-  "files": ["dist"],
+  "workspaces": [
+    "examples"
+  ],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./dist/knurl.js",
     "./external": "./dist/knurl.external.js"

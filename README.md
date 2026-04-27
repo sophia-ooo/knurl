@@ -6,7 +6,7 @@ A declarative, event-driven graphical interface for monitoring and modifying Jav
 
 [![npm version](https://img.shields.io/npm/v/knurl)](https://www.npmjs.com/package/knurl)
 
-[Examples](http://sophia-ooo.github.io/knurl/examples/) • [API](docs/api.md) • [Controls](docs/controls.md)
+[Examples](http://sophia-ooo.github.io/knurl/examples/) • [API](docs/api.md) • [Controls](docs/controls.md) • [Theming](docs/theming.md)
 
 ```js
 import knurl from "knurl";
@@ -38,46 +38,9 @@ npm install knurl
 
 ## Why knurl?
 
-knurl is built on three principles:
-
-- **Predictable state flow** — Changes emit events. You handle them.
-- **Serializable configuration** — Define UI as JSON. Save, version, generate.
-- **Simple, extensible API** — A 7-method API. Add custom controls and styles.
-
-## API
-
-- [`knurl.create(config[, options])`](docs/api.md#knurlcreateconfig-options)
-- [`knurl.register(type, component[, options])`](docs/api.md#knurlregistertype-component-options)
-- [`panel.get()`](docs/api.md#panelget)
-- [`panel.set(values[, options])`](docs/api.md#panelsetvalues-options)
-- [`panel.update(updates[, options])`](docs/api.md#panelupdateupdates-options)
-- [`panel.subscribe(id, handler)`](docs/api.md#panelsubscribeid-handler)
-- [`panel.subscribe(handler)`](docs/api.md#panelsubscribehandler)
-- [`panel.destroy()`](docs/api.md#paneldestroy)
-
-See the [full API documentation](docs/api.md).
-
-## Controls
-
-- [Input Controls](docs/controls.md#input-controls) – `range`, `number`, `text`, `color`, `toggle`, `pad2`
-- [Selection Controls](docs/controls.md#selection-controls) – `select`, `buttons`
-- [Action Controls](docs/controls.md#action-controls) – `button`
-- [Display Controls](docs/controls.md#display-controls) – `display`, `graph`
-- [Layout Controls](docs/controls.md#layout-controls) – `group`
-
-See the [full controls reference](docs/controls.md).
-
-## Theming
-
-knurl uses CSS custom properties for easy theming. Apply themes with the `classNames` option:
-
-```js
-const panel = knurl.create(controls, {
-    classNames: ["dark-theme", "compact"],
-});
-```
-
-See the [theming reference](docs/theming.md) for available CSS variables and examples.
+- Define UI with JSON
+- Changes emit events
+- Minimal API
 
 ## Building
 

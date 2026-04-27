@@ -1,5 +1,3 @@
-[← Back to README](../README.md)
-
 # API Reference
 
 The knurl API consists of 7 methods: 2 static methods on the `knurl` object and 5 instance methods on created panels.

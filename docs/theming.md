@@ -1,5 +1,3 @@
-[← Back to README](../README.md)
-
 # Theming Reference
 
 Apply custom styles using the `classNames` option:

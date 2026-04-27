@@ -1,5 +1,3 @@
-[← Back to README](../README.md)
-
 # Controls Reference
 
 A **control** is a UI element that displays and/or modifies a value. Each control is defined as a JSON object with at least an `id` and `type` property. Controls can be inputs (like sliders), displays (like graphs), or containers (like groups).
